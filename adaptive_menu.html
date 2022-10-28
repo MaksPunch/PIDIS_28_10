@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Адаптивное меню</title>
+	<style>
+		.menu {
+			position: absolute;
+			display: block;
+			padding: 5px;
+		}
+		.htm {
+			width: 40px;
+			padding: 5px;
+		}
+		ul {
+			width: 150px;
+			text-align: center;
+			font-size: 20px;
+			list-style-type: none;
+		}
+		li ul {
+			position: absolute;
+			display: none;
+		}
+		li a {
+			display: block;
+			color: #000;
+		}
+		li a:hover {
+			color: #b77148;
+		}
+		li a:active {
+			color: #ef7a04;
+		}
+		li:hover ul {
+			display: block;
+		}
+
+		.point {
+			background: #58e7e6;
+			text-align: center;
+			padding: 15px;
+			border-radius: 2px;
+			box-shadow: 0 0 0 1px #3e5c54;
+			margin: 0 0 0 -30px;
+		}
+		@media screen and (max-width: 600px) {
+			.menu {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<ul class="menu">
+		<li class="htm">
+			<span style="font-weight:bold;font-size:40px">&equiv;</span>
+			<ul>
+				<li><a href="https://address post" class="point">Главная</a></li>
+				<li><a href="https://address post" class="point">О сайте</a></li>
+				<li><a href="https://address post" class="point">Плагины WordPress</a></li>
+				<li><a href="https://address post" class="point">Полезные советы</a></li>
+				<li><a href="https://address post" class="point">Установка программ</a></li>
+				<li><a href="https://address post" class="point">Шпаргалки</a></li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
